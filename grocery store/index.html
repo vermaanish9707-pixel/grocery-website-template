@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Harvest & Co. fresh groceries delivered to your door.">
+    <title>Harvest & Co. | Fresh groceries</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:wght@600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="announcement">Free delivery on orders over $45 <span>•</span> Same-day slots available</div>
+    <header class="header">
+        <a href="#home" class="logo"><span class="logo-mark"><i class="fa fa-leaf"></i></span>harvest <b>&amp;
+                co.</b></a>
+        <nav class="navbar" aria-label="Main navigation">
+            <a href="#home">Home</a>
+            <a href="#categories">Shop produce</a>
+            <a href="#featured">Our story</a>
+            <a href="#journal">Journal</a>
+        </nav>
+        <div class="icons">
+            <button class="icon-btn" id="search-btn" aria-label="Search"><i class="fa fa-search"></i></button>
+            <button class="icon-btn cart-toggle" id="cart-btn" aria-label="Open cart"><i
+                    class="fa fa-shopping-bag"></i><span class="cart-count">0</span></button>
+            <button class="icon-btn" id="login-btn" aria-label="Open account"><i class="fa fa-user-o"></i></button>
+            <button class="icon-btn menu-btn" id="menu-btn" aria-label="Open menu"><i class="fa fa-bars"></i></button>
+        </div>
+        <form class="search-form" id="search-form" role="search">
+            <input type="search" id="search-box" placeholder="Search apples, bread, pantry..."
+                aria-label="Search products">
+            <button type="submit" aria-label="Submit search"><i class="fa fa-search"></i></button>
+        </form>
+        <aside class="shopping-cart" id="shopping-cart" aria-label="Shopping cart">
+            <div class="panel-heading">
+                <h2>Your basket</h2><button class="close-panel" aria-label="Close cart">&times;</button>
+            </div>
+            <div class="cart-items">
+                <p class="empty-cart">Your basket is waiting for something delicious.</p>
+            </div>
+            <div class="cart-footer">
+                <div><span>Subtotal</span><strong class="cart-total">$0.00</strong></div><button
+                    class="btn checkout-btn">Checkout <i class="fa fa-arrow-right"></i></button>
+            </div>
+        </aside>
+        <form class="login-form" id="login-form">
+            <h2>Welcome back</h2>
+            <p>Sign in to see your saved baskets.</p>
+            <input type="email" placeholder="Email address" aria-label="Email address" required>
+            <input type="password" placeholder="Password" aria-label="Password" required>
+            <button type="submit" class="btn">Sign in</button>
+            <small>New here? <a href="#">Create an account</a></small>
+        </form>
+    </header>
+
+    <main>
+        <section class="hero" id="home">
+            <div class="hero-copy">
+                <p class="eyebrow">Good food, closer to home</p>
+                <h1>Freshness you can <em>feel.</em></h1>
+                <p class="hero-text">Thoughtfully sourced groceries, seasonal produce, and pantry staples delivered with
+                    a little more care.</p><a href="#products" class="btn">Shop this week <i
+                        class="fa fa-arrow-right"></i></a>
+            </div>
+            <div class="hero-note"><span>01</span>
+                <div><strong>Picked at peak</strong><small>From local growers to your kitchen</small></div>
+            </div>
+        </section>
+
+        <section class="section categories" id="categories">
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">Start with the good stuff</p>
+                    <h2>Shop by <em>aisle</em></h2>
+                </div><a href="#products" class="text-link">View all aisles <i class="fa fa-arrow-right"></i></a>
+            </div>
+            <div class="category-grid"><a class="category-card" href="#products"><img src="image/cat-1.png"
+                        alt="Fresh fruits"><span>Fresh fruit <i class="fa fa-arrow-right"></i></span></a><a
+                    class="category-card" href="#products"><img src="image/cat-2.png"
+                        alt="Fresh vegetables"><span>Vegetables <i class="fa fa-arrow-right"></i></span></a><a
+                    class="category-card" href="#products"><img src="image/cat-3.png" alt="Dairy products"><span>Dairy &
+                        eggs <i class="fa fa-arrow-right"></i></span></a><a class="category-card" href="#products"><img
+                        src="image/cat-4.png" alt="Fresh meat"><span>Meat & seafood <i
+                            class="fa fa-arrow-right"></i></span></a></div>
+        </section>
+
+        <section class="section product-section" id="products">
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">The weekly edit</p>
+                    <h2>Good things, <em>in season</em></h2>
+                </div>
+                <div class="filters" aria-label="Filter products"><button class="filter active"
+                        data-filter="all">All</button><button class="filter" data-filter="fruit">Fruit</button><button
+                        class="filter" data-filter="veggies">Veggies</button><button class="filter"
+                        data-filter="pantry">Pantry</button></div>
+            </div>
+            <div class="product-grid">
+                <article class="product-card" data-name="organic bananas" data-price="2.49" data-category="fruit">
+                    <div class="product-image"><span class="tag">Best seller</span><img src="image/product-1.png"
+                            alt="Organic bananas"><button class="quick-add" aria-label="Add organic bananas to cart"><i
+                                class="fa fa-plus"></i></button></div>
+                    <div class="product-info">
+                        <p class="product-category">Fruit / 1 bunch</p>
+                        <h3>Organic bananas</h3><strong>2.49</strong>
+                    </div>
+                </article>
+                <article class="product-card" data-name="red bell peppers" data-price="3.99" data-category="veggies">
+                    <div class="product-image"><span class="tag">Local pick</span><img src="image/product-2.png"
+                            alt="Red bell peppers"><button class="quick-add"
+                            aria-label="Add red bell peppers to cart"><i class="fa fa-plus"></i></button></div>
+                    <div class="product-info">
+                        <p class="product-category">Vegetables / 3 pack</p>
+                        <h3>Red bell peppers</h3><strong>3.99</strong>
+                    </div>
+                </article>
+                <article class="product-card" data-name="ripe avocados" data-price="4.50" data-category="fruit">
+                    <div class="product-image"><img src="image/product-3.png" alt="Ripe avocados"><button
+                            class="quick-add" aria-label="Add ripe avocados to cart"><i class="fa fa-plus"></i></button>
+                    </div>
+                    <div class="product-info">
+                        <p class="product-category">Fruit / 2 pack</p>
+                        <h3>Ripe avocados</h3><strong>4.50</strong>
+                    </div>
+                </article>
+                <article class="product-card" data-name="garden tomatoes" data-price="3.25" data-category="veggies">
+                    <div class="product-image"><span class="tag">In season</span><img src="image/product-4.png"
+                            alt="Garden tomatoes"><button class="quick-add" aria-label="Add garden tomatoes to cart"><i
+                                class="fa fa-plus"></i></button></div>
+                    <div class="product-info">
+                        <p class="product-category">Vegetables / 1 lb</p>
+                        <h3>Garden tomatoes</h3><strong>3.25</strong>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="feature-banner" id="featured">
+            <div>
+                <p class="eyebrow">A little extra goodness</p>
+                <h2>Better choices<br>for <em>every table.</em></h2>
+                <p>From low-waste refills to small-batch makers, we make it easier to shop with your values.</p><a
+                    href="#journal" class="btn btn-light">Our sourcing promise <i class="fa fa-arrow-right"></i></a>
+            </div><img src="image/feature-img-1.png" alt="Fresh vegetables in a basket">
+        </section>
+
+        <section class="section journal" id="journal">
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">From the journal</p>
+                    <h2>Notes for a <em>fuller life</em></h2>
+                </div><a href="#journal" class="text-link">Read all stories <i class="fa fa-arrow-right"></i></a>
+            </div>
+            <div class="journal-grid">
+                <article><img src="image/blog-1.jpg" alt="Seasonal vegetables on a table">
+                    <p class="eyebrow">Seasonal eating</p>
+                    <h3>What to cook when the market is overflowing</h3><a href="#journal">Read story <i
+                            class="fa fa-arrow-right"></i></a>
+                </article>
+                <article><img src="image/blog-2.jpg" alt="Fresh groceries in a bag">
+                    <p class="eyebrow">Small changes</p>
+                    <h3>The five-minute pantry reset</h3><a href="#journal">Read story <i
+                            class="fa fa-arrow-right"></i></a>
+                </article>
+                <article><img src="image/blog-3.jpg" alt="Fresh fruit and vegetables">
+                    <p class="eyebrow">Meet the maker</p>
+                    <h3>Inside our neighborhood bread route</h3><a href="#journal">Read story <i
+                            class="fa fa-arrow-right"></i></a>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer><a href="#home" class="logo"><span class="logo-mark"><i class="fa fa-leaf"></i></span>harvest <b>&amp;
+                co.</b></a>
+        <p>Good food for ordinary days and the ones worth celebrating.</p><span>© 2026 Harvest &amp; Co.</span>
+    </footer>
+    <div class="toast" role="status" aria-live="polite"><i class="fa fa-check"></i><span>Added to your basket</span>
+    </div>
+    <script src="jss/script.js"></script>
+</body>
+
+</html>
